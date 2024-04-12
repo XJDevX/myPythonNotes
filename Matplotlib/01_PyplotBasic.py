@@ -1,4 +1,4 @@
-#<<---PyPlot basico--->>#
+#<<---PyPlot basico--->># (Matplotlib esta optimizado para numpy)
 import matplotlib as mpl
 mpl.use('TkAgg')
 import matplotlib.pyplot as plt
