@@ -1,4 +1,4 @@
-#<<---Combinando DataFrames con Concat--->>#
+#<<---Joining DFs with Concat--->>#
 import pandas as pd
 
 dict1 = {
@@ -21,12 +21,12 @@ print(f"\nDataFrame1: \n{df1}\n\n")
 print(f"DataFrame2: \n{df2}\n\n")
 
 
-print("*"*20,"Concat","*"*20,"\n") #Separador
+print("*"*20,"Concat","*"*20,"\n")
 
 
 #>> Concat
-df3 = pd.concat([df1, df2], ignore_index=True) #Concatenar DFs e ignorar indices por filas
-print(f"Concat DataFrames (Axis 0): \n{df3}\n") #Se concatena por defecto en el axis 0
+df3 = pd.concat([df1, df2], ignore_index=True) #Join DFs and ignore the indexes by rows
+print(f"Concat DataFrames (Axis 0): \n{df3}\n") #It's joined by default in the axis 0 (Rows)
 
-df3 = pd.concat([df1, df2], axis=1) #Concatenar DFs e ignorar indices por columnas
-print(f"Concat DataFrames (Axis 1): \n{df3}\n\n") #Se concatena por el axis 1
+df3 = pd.concat([df1, df2], axis=1) #Join DFs and ignore the indexes by columns
+print(f"Concat DataFrames (Axis 1): \n{df3}\n\n") #It's joined in the axis 1 (Columns)

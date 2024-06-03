@@ -1,4 +1,4 @@
-#<<---Apply (Aplicar funciones de Python a los DFs)--->>#
+#<<---Apply Python's functions to the DFs--->>#
 import pandas as pd
 
 csvFile = pd.read_csv("./02_bestsellers-with-categories.csv", sep=",", header=0)
